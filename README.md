@@ -13,25 +13,25 @@
 
 
 В проекте используются порталы для того, чтобы не городить шины событий и глобальные состояния для управления леяутами.
-https://www.npmjs.com/package/portal-vue
+* https://www.npmjs.com/package/portal-vue
 
 Настроена локализация, в том числе и для vuitify компонентов (/src/locale)
-https://kazupon.github.io/vue-i18n/
+* https://kazupon.github.io/vue-i18n/
 
-Все методы по работе с данными описываются в (/src/utils/date)
-https://date-fns.org/
+Все методы по работе с датами описываются в (/src/utils/date)
+* https://date-fns.org/
 
 Запросы к api (/src/api/)
-https://www.npmjs.com/package/axios
-
-Vuitify для всего остального (/src/plugins/vuetify)
-https://vuetifyjs.com/en/
+* https://www.npmjs.com/package/axios
 
 Валидация вне компонентов инпутов
-https://vuelidate.js.org/#getting-started
+* https://vuelidate.js.org/#getting-started
 
 Mitt если нужна шина событий. (weighs less than 200 bytes gzipped).
 Чтобы не использовать для этого отдельный инстанс Vue. 
-https://www.npmjs.com/package/mitt
+* https://www.npmjs.com/package/mitt
+
+Vuitify для всего остального (/src/plugins/vuetify)
+* https://vuetifyjs.com/en/
 
 Добавить .env в .gitignore
