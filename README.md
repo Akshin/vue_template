@@ -1,29 +1,23 @@
-# Raida
+# VUE 2 TEMPLATE
+
 
 ## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Каждая страница - абстрактное app приложение со своим routes, store, components, data. 
+/src/apps/{appname}
+- routes - массив роутов для данного приложения. Подключяется в корневом роуте (/src/router/index).
+- store - модуль vuex для данного приложения. Подключается в корневом сторе (/src/store/index)
+- data, components - конфиги и компоненты для данного приложения. 
 
-### Compiles and minifies for production
-```
-yarn build
-```
+В проекте используются порталы для того, чтобы не городить шины событий и глобальные состояния для управления леяутами.
+https://www.npmjs.com/package/portal-vue
 
-### Lints and fixes files
-```
-yarn lint
-```
+Настроена локализация, в том числе и для vuitify компонентов. 
+/src/locale
 
-### UI library
-```
-vuetify - https://vuetifyjs.com/en/
-```
+Все методы по работе с данными описываются в /src/utils/date
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Глобальные компоненты, конфиги находятся вне src/app/ 
+Глобальные компоненты - это чистые компоненты, без внешних зависимостей.
+
+.env добавить в .gitignore
